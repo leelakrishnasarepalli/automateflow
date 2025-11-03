@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 40 30% 92%;
+    --foreground: 25 30% 15%;
+
+    --card: 40 25% 96%;
+    --card-foreground: 25 30% 15%;
+
+    --popover: 40 25% 96%;
+    --popover-foreground: 25 30% 15%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 40 30% 98%;
+
+    --secondary: 40 20% 85%;
+    --secondary-foreground: 25 30% 15%;
+
+    --muted: 40 20% 85%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 25 95% 53%;
+    --accent-foreground: 40 30% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 30% 98%;
+
+    --border: 40 20% 82%;
+    --input: 40 20% 88%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.75rem;
+
+    --gradient-hero: linear-gradient(135deg, hsl(40 30% 92%), hsl(40 25% 96%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 95% 53%), hsl(15 95% 48%));
+    --glow-primary: 0 0 80px hsl(25 95% 53% / 0.3);
+  }
+
+  .dark {
+    --background: 40 30% 92%;
+    --foreground: 25 30% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "liga" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .glow-primary {
+    filter: drop-shadow(var(--glow-primary));
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-scroll-right {
+    animation: scroll-right 40s linear infinite;
+  }
+
+  .animate-scroll-left {
+    animation: scroll-left 40s linear infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
