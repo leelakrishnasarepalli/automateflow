@@ -1,19 +1,16 @@
 const tools = [
-  { name: "Power Automate", category: "Power Platform", logo: "/logos/power-automate.png" },
   { name: "Power Apps", category: "Power Platform", logo: "/logos/power-apps.png" },
   { name: "Power Pages", category: "Power Platform", logo: "/logos/power-pages.png" },
-  { name: "Power BI", category: "Power Platform", logo: "/logos/power-bi.png" },
+  { name: "Power BI", category: "Power Platform", logo: "/logos/Power_BI.png" },
   { name: "n8n", category: "Automation", logo: "/logos/n8n.png" },
   { name: "Zapier", category: "Automation", logo: "/logos/zapier.png" },
   { name: "Make.com", category: "Automation", logo: "/logos/make.png" },
-  { name: "BuildShip", category: "Development", logo: "/logos/buildship.png" },
-  { name: "Appsmith", category: "Development", logo: "/logos/appsmith.png" },
-  { name: "Budibase", category: "Development", logo: "/logos/budibase.png" },
+  { name: "Budibase", category: "Development", logo: "/logos/buildbase.png" },
   { name: "Airtable", category: "Database", logo: "/logos/airtable.png" },
   { name: "VectorShift", category: "AI", logo: "/logos/vectorshift.png" },
-  { name: "RelevanceAI", category: "AI", logo: "/logos/relevanceai.png" },
+  { name: "RelevanceAI", category: "AI", logo: "/logos/RelevanceAI.png" },
   { name: "StackAI", category: "AI", logo: "/logos/stackai.png" },
-  { name: "PyTorch", category: "AI", logo: "/logos/pytorch.png" }
+  { name: "PyTorch", category: "AI", logo: "/logos/PyTorch.png" }
 ];
 
 const ToolLogos = () => {
