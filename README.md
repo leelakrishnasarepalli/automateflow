@@ -1,73 +1,184 @@
-# Welcome to your Lovable project
+# AutomateFlow - AI-Powered Automation Portfolio
 
-## Project info
+[![Live Website](https://img.shields.io/badge/Live-automateflow.live-orange)](https://automateflow.live)
+[![GitHub](https://img.shields.io/badge/GitHub-automateflow-blue)](https://github.com/leelakrishnasarepalli/automateflow)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**URL**: https://lovable.dev/projects/cd34079e-36fa-4c79-814f-d2f6ac3144f0
+Professional portfolio website showcasing AI-powered automation solutions, workflow automation projects, and rapid application development expertise.
 
-## How can I edit this code?
+## 🌐 Live Demo
 
-There are several ways of editing your application.
+Visit the live website: **[automateflow.live](https://automateflow.live)**
 
-**Use Lovable**
+## 📋 About
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cd34079e-36fa-4c79-814f-d2f6ac3144f0) and start prompting.
+AutomateFlow is a comprehensive portfolio showcasing expertise in:
+- **AI Solutions**: Conversational AI assistants, chatbots, and document processing
+- **Workflow Automation**: Power Automate, n8n, Zapier, Make.com integration
+- **Rapid App Development**: MVP creation using no-code/low-code platforms
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- 🎨 Modern, responsive design with Tailwind CSS
+- 🎥 Interactive YouTube video showcase
+- 📱 Mobile-friendly navigation
+- 🔗 GitHub projects integration
+- ⚡ Fast performance with Vite
+- 🎯 Smooth scrolling navigation
+- 📊 Dynamic statistics display
+- 🌓 Clean, professional UI
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Framework**: React 18 with TypeScript
+- **Build Tool**: Vite with SWC
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui (Radix UI primitives)
+- **State Management**: TanStack Query
+- **Form Handling**: React Hook Form with Zod
+- **Routing**: React Router v6
+- **Icons**: Lucide React
 
-Follow these steps:
+## 🚀 Getting Started
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Prerequisites
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Node.js 16+ and npm
+- Git
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Installation
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+# Clone the repository
+git clone https://github.com/leelakrishnasarepalli/automateflow.git
+
+# Navigate to project directory
+cd automateflow
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The development server will start at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📜 Available Scripts
 
-**Use GitHub Codespaces**
+```bash
+# Start development server
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Build for production
+npm run build
 
-## What technologies are used for this project?
+# Build for development mode
+npm run build:dev
 
-This project is built with:
+# Run ESLint
+npm run lint
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Preview production build
+npm run preview
+```
 
-## How can I deploy this project?
+## 🏗️ Project Structure
 
-Simply open [Lovable](https://lovable.dev/projects/cd34079e-36fa-4c79-814f-d2f6ac3144f0) and click on Share -> Publish.
+```
+automateflow/
+├── public/
+│   ├── logos/              # Tool and technology logos
+│   └── icons8-star-color-glass-96.png
+├── src/
+│   ├── components/
+│   │   ├── ui/            # shadcn/ui components
+│   │   ├── Navigation.tsx # Top navigation bar
+│   │   ├── Hero.tsx       # Landing section
+│   │   ├── Services.tsx   # Services showcase
+│   │   ├── ToolLogos.tsx  # Technology logos
+│   │   ├── Portfolio.tsx  # Video portfolio
+│   │   ├── GitHubProjects.tsx # GitHub projects
+│   │   ├── CTA.tsx        # Call-to-action section
+│   │   ├── Footer.tsx     # Footer with links
+│   │   └── VideoModal.tsx # YouTube video player
+│   ├── pages/
+│   │   ├── Index.tsx      # Main page
+│   │   └── NotFound.tsx   # 404 page
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   └── main.tsx           # App entry point
+├── CLAUDE.md              # Claude Code guidelines
+├── DEPLOYMENT.md          # Deployment instructions
+└── vercel.json            # Vercel configuration
+```
 
-## Can I connect a custom domain to my Lovable project?
+## 🚢 Deployment
 
-Yes, you can!
+### Deploy to Vercel (Recommended)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. **Quick Deploy Script:**
+   ```bash
+   ./deploy.sh
+   ```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+2. **Manual Deploy:**
+   ```bash
+   npm run build
+   vercel --prod
+   ```
+
+3. **GitHub Integration:**
+   - Connect repository to Vercel
+   - Auto-deploy on push to `main` branch
+
+For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Custom Domain Setup
+
+To use with `automateflow.live`:
+
+1. Add domain in Vercel dashboard
+2. Configure DNS records:
+   ```
+   Type: A
+   Name: @
+   Value: 76.76.21.21
+
+   Type: CNAME
+   Name: www
+   Value: cname.vercel-dns.com
+   ```
+
+## 📊 Project Highlights
+
+- **1000+ Workflows** built and deployed
+- **10,000+ Hours** of automation experience
+- **9 Video Demos** showcasing real projects
+- **10 GitHub Projects** with detailed documentation
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👤 Author
+
+**Leela Krishna Sarepalli**
+
+- GitHub: [@leelakrishnasarepalli](https://github.com/leelakrishnasarepalli)
+- LinkedIn: [leelakrishnasarepalli](https://www.linkedin.com/in/leelakrishnasarepalli/)
+- Email: leela.sarepalli@gmail.com
+
+## 🙏 Acknowledgments
+
+- Built with [Vite](https://vitejs.dev/)
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
+- Icons from [Lucide](https://lucide.dev/)
+
+---
+
+⭐ Star this repo if you find it helpful!
