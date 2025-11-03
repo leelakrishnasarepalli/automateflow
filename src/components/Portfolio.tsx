@@ -73,6 +73,19 @@ const projects = [
 const Portfolio = () => {
   const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
 
+  // Extract YouTube video ID from URL
+  const getYouTubeVideoId = (url: string) => {
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
+    const match = url.match(regExp);
+    return match && match[2].length === 11 ? match[2] : null;
+  };
+
+  // Get YouTube thumbnail URL
+  const getYouTubeThumbnail = (url: string) => {
+    const videoId = getYouTubeVideoId(url);
+    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null;
+  };
+
   return (
     <section className="py-24 px-6 relative">
       <div className="max-w-7xl mx-auto space-y-16">
@@ -90,20 +103,41 @@ const Portfolio = () => {
             <Card key={index} className="overflow-hidden bg-card border-primary/10 hover:border-primary/20 transition-all duration-300 group hover:shadow-xl hover:shadow-primary/5">
               {/* Video Thumbnail */}
               <div
-                className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden cursor-pointer"
+                className="aspect-video relative overflow-hidden cursor-pointer bg-gradient-to-br from-primary/10 to-accent/10"
                 onClick={() => setSelectedVideo({ url: project.videoUrl, title: project.title })}
               >
+                {/* YouTube Thumbnail */}
+                {getYouTubeThumbnail(project.videoUrl) && (
+                  <img
+                    src={getYouTubeThumbnail(project.videoUrl)!}
+                    alt={project.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback to medium quality if maxresdefault fails
+                      const videoId = getYouTubeVideoId(project.videoUrl);
+                      if (videoId) {
+                        e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                      }
+                    }}
+                  />
+                )}
+
+                {/* Dark overlay on hover */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+
+                {/* Play button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
+                  <div className="w-16 h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
                     <Play className="w-8 h-8 text-primary-foreground ml-1" />
                   </div>
                 </div>
+
+                {/* Video Demo badge */}
                 <div className="absolute top-3 right-3">
-                  <span className="px-3 py-1 rounded-full bg-background/90 text-xs font-medium border border-primary/20">
+                  <span className="px-3 py-1 rounded-full bg-background/90 backdrop-blur-sm text-xs font-medium border border-primary/20">
                     Video Demo
                   </span>
                 </div>
-                <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors" />
               </div>
               
               <div className="p-5 space-y-3">
