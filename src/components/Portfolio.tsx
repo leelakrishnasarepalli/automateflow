@@ -80,10 +80,10 @@ const Portfolio = () => {
     return match && match[2].length === 11 ? match[2] : null;
   };
 
-  // Get YouTube thumbnail URL
+  // Get YouTube thumbnail URL (using sddefault for better compatibility)
   const getYouTubeThumbnail = (url: string) => {
     const videoId = getYouTubeVideoId(url);
-    return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null;
+    return videoId ? `https://img.youtube.com/vi/${videoId}/sddefault.jpg` : null;
   };
 
   return (
@@ -113,10 +113,24 @@ const Portfolio = () => {
                     alt={project.title}
                     className="absolute inset-0 w-full h-full object-cover"
                     onError={(e) => {
-                      // Fallback to medium quality if maxresdefault fails
+                      // Multi-level fallback for thumbnails
+                      const currentSrc = e.currentTarget.src;
                       const videoId = getYouTubeVideoId(project.videoUrl);
+
                       if (videoId) {
-                        e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                        if (currentSrc.includes('sddefault')) {
+                          // Try maxresdefault
+                          e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                        } else if (currentSrc.includes('maxresdefault')) {
+                          // Try hqdefault
+                          e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                        } else if (currentSrc.includes('hqdefault')) {
+                          // Final fallback to default
+                          e.currentTarget.src = `https://img.youtube.com/vi/${videoId}/default.jpg`;
+                        } else {
+                          // If all fail, hide the image to show gradient background
+                          e.currentTarget.style.display = 'none';
+                        }
                       }
                     }}
                   />
