@@ -58,11 +58,43 @@ cd automateflow
 # Install dependencies
 npm install
 
+# Set up environment variables (see Configuration section below)
+cp .env.example .env
+# Edit .env and add your Web3Forms access key
+
 # Start development server
 npm run dev
 ```
 
 The development server will start at `http://localhost:8080`
+
+### Configuration
+
+#### Email Notifications Setup
+
+The contact form uses Web3Forms for email notifications. To set it up:
+
+1. **Sign up for Web3Forms** (100% free, unlimited emails):
+   - Visit [web3forms.com](https://web3forms.com)
+   - Sign up with your email (leela.sarepalli@gmail.com)
+   - Verify your email address
+   - Copy your Access Key from the dashboard
+
+2. **Configure Environment Variables**:
+   ```bash
+   # Copy the example file
+   cp .env.example .env
+
+   # Edit .env and add your access key
+   VITE_WEB3FORMS_ACCESS_KEY=your_access_key_here
+   ```
+
+3. **Test the Form**:
+   - Start the dev server: `npm run dev`
+   - Fill out the email form and click "Get Started"
+   - You should receive an email notification at your registered email
+
+**Note**: The `.env` file is git-ignored to protect your API key. For deployment on Vercel, add the environment variable in your Vercel project settings.
 
 ## 📜 Available Scripts
 

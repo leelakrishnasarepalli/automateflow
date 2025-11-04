@@ -36,24 +36,37 @@ const CTA = () => {
     setIsSubmitting(true);
 
     try {
-      // Store email in localStorage (can be replaced with API call)
-      const existingEmails = JSON.parse(localStorage.getItem("consultationEmails") || "[]");
-      existingEmails.push({
-        email,
-        timestamp: new Date().toISOString(),
+      // Send email notification using Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+          subject: "New Consultation Request - AutomateFlow",
+          from_name: "AutomateFlow Website",
+          email: email,
+          message: `New consultation request from: ${email}\n\nTimestamp: ${new Date().toLocaleString()}\nSource: AutomateFlow Website`,
+        }),
       });
-      localStorage.setItem("consultationEmails", JSON.stringify(existingEmails));
 
-      toast({
-        title: "Success!",
-        description: "Thank you for your interest! We'll contact you soon.",
-      });
+      const data = await response.json();
 
-      setEmail("");
+      if (data.success) {
+        toast({
+          title: "Success!",
+          description: "Thank you for your interest! We'll contact you soon.",
+        });
+        setEmail("");
+      } else {
+        throw new Error(data.message || "Failed to submit");
+      }
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: "Something went wrong. Please try again or email us directly at leela.sarepalli@gmail.com",
         variant: "destructive",
       });
     } finally {
