@@ -52,7 +52,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
-                    const element = document.getElementById('cta');
+                    const element = document.getElementById('schedule');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
                   className="hover:text-primary transition-colors text-left"
@@ -99,7 +99,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => {
-                    const element = document.getElementById('contact');
+                    const element = document.getElementById('schedule');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
                   className="hover:text-primary transition-colors text-left"
@@ -122,7 +122,7 @@ const Footer = () => {
                 <Github className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="https://www.linkedin.com/in/leelakrishnasarepalli/"
+                href="https://www.linkedin.com/company/cloud-solutions-diy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"

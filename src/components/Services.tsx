@@ -53,8 +53,8 @@ const Services = () => {
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
-              <Card key={index} className="p-8 bg-card border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group">
-                <div className="space-y-6">
+              <Card key={index} className="p-8 bg-card border-primary/10 hover:border-primary/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group flex flex-col h-full">
+                <div className="space-y-6 flex-grow flex flex-col">
                   <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <Icon className="w-7 h-7 text-primary" />
                   </div>
@@ -66,7 +66,7 @@ const Services = () => {
                     </p>
                   </div>
                   
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 flex-grow">
                     {service.features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary" />
@@ -74,7 +74,7 @@ const Services = () => {
                       </li>
                     ))}
                   </ul>
-                  
+
                   <Button
                     variant="ghost"
                     className="w-full group/btn justify-between hover:bg-primary/10"

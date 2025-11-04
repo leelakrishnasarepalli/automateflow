@@ -33,7 +33,7 @@ const Hero = () => {
             size="lg"
             className="gap-2 text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground"
             onClick={() => {
-              const element = document.getElementById('cta');
+              const element = document.getElementById('schedule');
               if (element) element.scrollIntoView({ behavior: 'smooth' });
             }}
           >

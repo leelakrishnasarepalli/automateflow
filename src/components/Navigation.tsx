@@ -50,7 +50,7 @@ const Navigation = () => {
             </button>
             <Button
               size="sm"
-              onClick={() => scrollToSection('cta')}
+              onClick={() => scrollToSection('schedule')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Book a Consultation
@@ -99,7 +99,7 @@ const Navigation = () => {
             </button>
             <Button
               size="sm"
-              onClick={() => scrollToSection('cta')}
+              onClick={() => scrollToSection('schedule')}
               className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Book a Consultation

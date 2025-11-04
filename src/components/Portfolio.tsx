@@ -177,8 +177,7 @@ const Portfolio = () => {
             variant="outline"
             className="gap-2 border-primary/20 hover:bg-primary/10"
             onClick={() => {
-              const element = document.getElementById('github-projects');
-              if (element) element.scrollIntoView({ behavior: 'smooth' });
+              window.open('https://github.com/leelakrishnasarepalli?tab=repositories', '_blank');
             }}
           >
             <Github className="w-5 h-5" />
