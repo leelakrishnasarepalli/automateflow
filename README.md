@@ -13,8 +13,8 @@ Visit the live website: **[automateflow.live](https://automateflow.live)**
 ## 📋 About
 
 AutomateFlow is a comprehensive portfolio showcasing expertise in:
-- **AI Solutions**: Conversational AI assistants, chatbots, and document processing
-- **Workflow Automation**: Power Automate, n8n, Zapier, Make.com integration
+- **AI Agents**: Conversational AI assistants, chatbots, and intelligent automation
+- **Agentic Workflows**: Power Automate, n8n, Zapier, Make.com integration
 - **Rapid App Development**: MVP creation using no-code/low-code platforms
 
 ## ✨ Features
@@ -27,6 +27,9 @@ AutomateFlow is a comprehensive portfolio showcasing expertise in:
 - 🎯 Smooth scrolling navigation
 - 📊 Dynamic statistics display
 - 🌓 Clean, professional UI
+- 📅 Integrated Calendly scheduling for consultations
+- 📧 Automated booklet delivery via email
+- 🔄 Zapier integration for workflow automation
 
 ## 🛠️ Tech Stack
 
@@ -76,7 +79,7 @@ The contact form uses Web3Forms for email notifications. To set it up:
 
 1. **Sign up for Web3Forms** (100% free, unlimited emails):
    - Visit [web3forms.com](https://web3forms.com)
-   - Sign up with your email (leela.sarepalli@gmail.com)
+   - Sign up with your email
    - Verify your email address
    - Copy your Access Key from the dashboard
 
@@ -95,6 +98,22 @@ The contact form uses Web3Forms for email notifications. To set it up:
    - You should receive an email notification at your registered email
 
 **Note**: The `.env` file is git-ignored to protect your API key. For deployment on Vercel, add the environment variable in your Vercel project settings.
+
+#### Calendly Integration Setup
+
+The website includes an integrated Calendly scheduling system for consultations:
+
+1. **Setup Instructions**: See detailed guide in `docs/CALENDLY_SETUP.md`
+2. **Features**:
+   - Popup-based meeting scheduler
+   - Zapier automation triggers when meetings are booked
+   - Success state with meeting confirmation details
+   - Automated task creation in your todo list
+
+3. **Configuration**:
+   - Update Calendly URL in `src/components/Scheduling.tsx`
+   - Configure Zapier integration for post-booking automation
+   - Customize booking confirmation messages
 
 ## 📜 Available Scripts
 
@@ -131,7 +150,8 @@ automateflow/
 │   │   ├── ToolLogos.tsx  # Technology logos
 │   │   ├── Portfolio.tsx  # Video portfolio
 │   │   ├── GitHubProjects.tsx # GitHub projects
-│   │   ├── CTA.tsx        # Call-to-action section
+│   │   ├── CTA.tsx        # Call-to-action with booklet delivery
+│   │   ├── Scheduling.tsx # Calendly scheduling integration
 │   │   ├── Footer.tsx     # Footer with links
 │   │   └── VideoModal.tsx # YouTube video player
 │   ├── pages/
@@ -140,8 +160,10 @@ automateflow/
 │   ├── hooks/             # Custom React hooks
 │   ├── lib/               # Utility functions
 │   └── main.tsx           # App entry point
+├── docs/                  # Documentation (gitignored)
+│   ├── CALENDLY_SETUP.md  # Calendly & Zapier setup guide
+│   └── DEPLOYMENT.md      # Deployment instructions
 ├── CLAUDE.md              # Claude Code guidelines
-├── DEPLOYMENT.md          # Deployment instructions
 └── vercel.json            # Vercel configuration
 ```
 
@@ -164,7 +186,7 @@ automateflow/
    - Connect repository to Vercel
    - Auto-deploy on push to `main` branch
 
-For detailed deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md)
+For detailed deployment instructions, see [DEPLOYMENT.md](docs/DEPLOYMENT.md)
 
 ### Custom Domain Setup
 

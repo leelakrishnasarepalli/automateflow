@@ -5,6 +5,7 @@ import ToolLogos from "@/components/ToolLogos";
 import Portfolio from "@/components/Portfolio";
 import GitHubProjects from "@/components/GitHubProjects";
 import CTA from "@/components/CTA";
+import Scheduling from "@/components/Scheduling";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -25,6 +26,9 @@ const Index = () => {
         </div>
         <div id="cta">
           <CTA />
+        </div>
+        <div id="schedule">
+          <Scheduling />
         </div>
         <div id="contact">
           <Footer />

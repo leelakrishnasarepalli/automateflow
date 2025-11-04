@@ -46,10 +46,10 @@ const CTA = () => {
         },
         body: JSON.stringify({
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
-          subject: "New Consultation Request - AutomateFlow",
+          subject: "New Booklet Request - AI Agents & Workflows Guide",
           from_name: "AutomateFlow Website",
           email: email,
-          message: `New consultation request from: ${email}\n\nTimestamp: ${new Date().toLocaleString()}\nSource: AutomateFlow Website`,
+          message: `New booklet request from: ${email}\n\nRequested: Comprehensive guide to building AI agents and workflows\nTimestamp: ${new Date().toLocaleString()}\nSource: AutomateFlow Website\n\nAction Required: Send the AI Agents & Workflows booklet to this email address.`,
         }),
       });
 
@@ -61,7 +61,7 @@ const CTA = () => {
         setEmail("");
         toast({
           title: "Success!",
-          description: "Thank you for your interest! We'll contact you soon.",
+          description: "Check your email for the AI Agents & Workflows booklet!",
         });
       } else {
         throw new Error(data.message || "Failed to submit");
@@ -97,8 +97,7 @@ const CTA = () => {
                   Ready to <span className="text-gradient">Automate</span> Your Business?
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                  Let's discuss how AI agents and workflow automation can transform your operations.
-                  Book a free consultation today.
+                  Enter your email and receive a comprehensive booklet to get started building AI agents and workflows for your business.
                 </p>
               </div>
 
@@ -141,7 +140,7 @@ const CTA = () => {
                 </h2>
                 <div className="space-y-2">
                   <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                    We've received your consultation request.
+                    We've received your booklet request!
                   </p>
                   <div className="flex items-center justify-center gap-2 text-lg">
                     <Mail className="w-5 h-5 text-primary" />
@@ -155,15 +154,15 @@ const CTA = () => {
                 <ul className="text-left space-y-3 text-muted-foreground">
                   <li className="flex gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>We'll review your request within 24 hours</span>
+                    <span>Check your inbox for the comprehensive AI Agents & Workflows booklet</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>You'll receive an email to schedule your free consultation</span>
+                    <span>Learn step-by-step how to build and deploy AI agents for your business</span>
                   </li>
                   <li className="flex gap-3">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>We'll discuss your automation needs and propose tailored solutions</span>
+                    <span>Ready to implement? Schedule a consultation below to discuss your needs</span>
                   </li>
                 </ul>
               </div>

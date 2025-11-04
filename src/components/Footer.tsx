@@ -35,7 +35,7 @@ const Footer = () => {
                   }}
                   className="hover:text-primary transition-colors text-left"
                 >
-                  n8n Workflows
+                  Agentic Workflows
                 </button>
               </li>
               <li>
