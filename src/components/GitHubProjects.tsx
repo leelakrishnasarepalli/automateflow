@@ -4,6 +4,12 @@ import { Github, ExternalLink, Code } from "lucide-react";
 
 const githubProjects = [
   {
+    name: "AutomateFlow - AI-Powered Automation Portfolio",
+    description: "Professional portfolio website showcasing AI-powered automation solutions, workflow automation projects, and rapid application development expertise.",
+    url: "https://github.com/leelakrishnasarepalli/automateflow",
+    tags: ["React", "TypeScript", "Vite", "shadcn/ui"]
+  },
+  {
     name: "Playwright Test Automation Framework with MCP Agents",
     description: "A comprehensive test automation framework for pmiloc.org using Playwright, TypeScript, and AI-powered agents (Planner, Generator, Healer) with Claude integration.",
     url: "https://github.com/leelakrishnasarepalli/playwright-mcp-agents-demo",

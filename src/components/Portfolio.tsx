@@ -6,6 +6,13 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "AI-Powered Automation Portfolio",
+    description: "Professional portfolio website showcasing AI-powered automation solutions, workflow automation projects, and rapid application development expertise.",
+    tags: ["React", "TypeScript", "Portfolio"],
+    video: true,
+    videoUrl: "https://youtu.be/UKdYIFz11Co"
+  },
+  {
     title: "AI Document Processing System",
     description: "Automated document analysis and data extraction using AI for non-profit grant applications.",
     tags: ["AI", "Document Processing", "LandingAI"],
