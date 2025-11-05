@@ -6,9 +6,9 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
-    title: "AI-Powered Automation Portfolio",
-    description: "Professional portfolio website showcasing AI-powered automation solutions, workflow automation projects, and rapid application development expertise.",
-    tags: ["React", "TypeScript", "Portfolio"],
+    title: "Zapier workflow connects Calendly",
+    description: "Zapier workflow connects Calendly (from my website) and Todoist — handling bookings, filtering requests, setting reminders, and prioritizing leads automatically.",
+    tags: ["Zapier", "Calendly", "Todoist"],
     video: true,
     videoUrl: "https://youtu.be/UKdYIFz11Co"
   },
