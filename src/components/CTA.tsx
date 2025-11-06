@@ -123,7 +123,7 @@ const CTA = () => {
               </div>
 
               <p className="text-sm text-muted-foreground">
-                💼 Serving non-profits and small businesses worldwide
+                💼 Serving non-profits and small businesses in Canada & USA
               </p>
             </>
           ) : (
