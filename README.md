@@ -13,6 +13,7 @@ Visit the live website: **[automateflow.live](https://automateflow.live)**
 ## 📋 About
 
 AutomateFlow is a comprehensive portfolio showcasing expertise in:
+
 - **AI Agents**: Conversational AI assistants, chatbots, and intelligent automation
 - **Agentic Workflows**: Power Automate, n8n, Zapier, Make.com integration
 - **Rapid App Development**: MVP creation using no-code/low-code platforms
@@ -78,12 +79,14 @@ The development server will start at `http://localhost:8080`
 The contact form uses Web3Forms for email notifications. To set it up:
 
 1. **Sign up for Web3Forms** (100% free, unlimited emails):
+
    - Visit [web3forms.com](https://web3forms.com)
    - Sign up with your email
    - Verify your email address
    - Copy your Access Key from the dashboard
 
 2. **Configure Environment Variables**:
+
    ```bash
    # Copy the example file
    cp .env.example .env
@@ -105,6 +108,7 @@ The website includes an integrated Calendly scheduling system for consultations:
 
 1. **Setup Instructions**: See detailed guide in `docs/CALENDLY_SETUP.md`
 2. **Features**:
+
    - Popup-based meeting scheduler
    - Zapier automation triggers when meetings are booked
    - Success state with meeting confirmation details
@@ -172,11 +176,13 @@ automateflow/
 ### Deploy to Vercel (Recommended)
 
 1. **Quick Deploy Script:**
+
    ```bash
    ./deploy.sh
    ```
 
 2. **Manual Deploy:**
+
    ```bash
    npm run build
    vercel --prod
@@ -194,6 +200,7 @@ To use with `automateflow.live`:
 
 1. Add domain in Vercel dashboard
 2. Configure DNS records:
+
    ```
    Type: A
    Name: @
@@ -237,4 +244,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ⭐ Star this repo if you find it helpful!
 
-**Last Updated**: 2025-11-06
+**Last Updated**: 2025-11-05
