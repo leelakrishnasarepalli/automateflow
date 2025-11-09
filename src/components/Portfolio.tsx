@@ -13,6 +13,20 @@ const projects = [
     videoUrl: "https://youtu.be/UKdYIFz11Co"
   },
   {
+    title: "Relevance AI agent features",
+    description: "an agent that fetches the latest job postings from a company's LinkedIn page — just say @RelevanceAI fetch me jobs from Scotiabank",
+    tags: ["Relevance AI", "AI Agent", "LinkedIn"],
+    video: true,
+    videoUrl: "https://youtu.be/LSo1nB4drpU"
+  },
+  {
+    title: "Built an agentic workflow using Make.com",
+    description: "an agentic workflow using Make.com that listens to Hacker News RSS feeds for the newest AI, automation, and LLM topics — then automatically summarizes and posts them on my LinkedIn company page",
+    tags: ["Make.com", "RSS", "LinkedIn"],
+    video: true,
+    videoUrl: "https://youtu.be/omJMx1zjwlE"
+  },
+  {
     title: "AI Document Processing System",
     description: "Automated document analysis and data extraction using AI for non-profit grant applications.",
     tags: ["AI", "Document Processing", "LandingAI"],
