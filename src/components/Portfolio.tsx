@@ -6,6 +6,20 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "VectorShift to build an automation pipeline",
+    description: "Takes any company LinkedIn URL as input. Scrapes and compiles publicly available company information. Generates concise summaries using LLM-powered processing.",
+    tags: ["VectorShift", "Automation", "Pipeline"],
+    video: true,
+    videoUrl: "https://youtu.be/Cbx032TTehY"
+  },
+  {
+    title: "StackAI to deploy a Chatbot",
+    description: "StackAI to deploy a Chatbot that can answer questions about the company and its products.",
+    tags: ["StackAI", "Chatbot", "Deployment"],
+    video: true,
+    videoUrl: "https://youtu.be/_GDHSa6qdlA"
+  },
+  {
     title: "Zapier workflow connects Calendly",
     description: "Zapier workflow connects Calendly (from my website) and Todoist — handling bookings, filtering requests, setting reminders, and prioritizing leads automatically.",
     tags: ["Zapier", "Calendly", "Todoist"],
