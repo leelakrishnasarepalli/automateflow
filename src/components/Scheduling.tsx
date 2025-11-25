@@ -120,7 +120,7 @@ const Scheduling = () => {
         </div>
 
         {/* Additional Info Cards - Only show when not booked */}
-        {!isBooked && (
+        {/* {!isBooked && ( 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
           <div className="bg-background/50 backdrop-blur-sm rounded-xl p-6 border border-primary/10 text-center space-y-3">
             <div className="flex justify-center">
@@ -158,7 +158,7 @@ const Scheduling = () => {
             </p>
           </div>
         </div>
-        )}
+        {/* )} */}
       </div>
     </section>
   );

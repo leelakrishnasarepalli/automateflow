@@ -1,4 +1,8 @@
 const tools = [
+  { name: "Activepieces", category: "Automation", logo: "/logos/activepieces.png" },
+  { name: "langflow", category: "Automation", logo: "/logos/langflow.png" },
+  { name: "node-red", category: "Automation", logo: "/logos/node-red-hexagon.png" },
+  { name: "Pipedream", category: "Automation", logo: "/logos/pipedream.png" },
   { name: "Power Apps", category: "Power Platform", logo: "/logos/power-apps.png" },
   { name: "Power Pages", category: "Power Platform", logo: "/logos/power-pages.png" },
   { name: "Power BI", category: "Power Platform", logo: "/logos/Power_BI.png" },
@@ -10,7 +14,11 @@ const tools = [
   { name: "VectorShift", category: "AI", logo: "/logos/vectorshift.png" },
   { name: "RelevanceAI", category: "AI", logo: "/logos/RelevanceAI.png" },
   { name: "StackAI", category: "AI", logo: "/logos/stackai.png" },
-  { name: "PyTorch", category: "AI", logo: "/logos/PyTorch.png" }
+  { name: "PyTorch", category: "AI", logo: "/logos/PyTorch.png" },
+  { name: "LandingAI", category: "AI", logo: "/logos/landingai.png" },
+  { name: "VAPI", category: "AI", logo: "/logos/vapi.png" },
+  { name: "MCP", category: "AI", logo: "/logos/mcp.png" },
+  { name: "Playwright", category: "Automation", logo: "/logos/playwright.png" }
 ];
 
 const ToolLogos = () => {

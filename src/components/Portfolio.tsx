@@ -6,6 +6,34 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "Automated Q&A workflow using Pipedream",
+    description: "This is a simple example of how teams can leverage automation + vector search + AI models to deliver fast and accurate answers from internal documents.",
+    tags: ["Pipedream", "Automation", "Vector Search"],
+    video: true,
+    videoUrl: "https://youtu.be/qrBBAGOeNrg"
+  },
+  {
+    title: "Activepieces workflow automates CV intake",
+    description: "A custom Activepieces workflow automates CV intake, AI-driven analysis, scoring, and routing to optimize early-stage hiring.",
+    tags: ["Activepieces", "Automation", "CV Intake"],
+    video: true,
+    videoUrl: "https://youtu.be/pqXOT7tNAtM"
+  },
+  {
+    title: "Node-RED + AI integration",
+    description: "The ability to connect system commands, APIs, devices, and AI—visually and instantly—makes Node-red perfect for building real-world automations.",
+    tags: ["Node-RED", "AI Integration", "Automation"],
+    video: true,
+    videoUrl: "https://youtu.be/KTyH3QkchX0"
+  },
+  {
+    title: "AI Agentic Workflow using Langflow, a Low-code AI builder",
+    description: "In this setup, I first ingested and stored the document in a Vector Database, then built a workflow that allows users to query the PDF instantly and get accurate, context-aware answers",
+    tags: ["Langflow", "Vector Database", "PDF Processing"],
+    video: true,
+    videoUrl: "https://youtu.be/DqW75neKnus"
+  },
+  {
     title: "VectorShift to build an automation pipeline",
     description: "Takes any company LinkedIn URL as input. Scrapes and compiles publicly available company information. Generates concise summaries using LLM-powered processing.",
     tags: ["VectorShift", "Automation", "Pipeline"],

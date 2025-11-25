@@ -4,7 +4,7 @@ import Services from "@/components/Services";
 import ToolLogos from "@/components/ToolLogos";
 import Portfolio from "@/components/Portfolio";
 import GitHubProjects from "@/components/GitHubProjects";
-import CTA from "@/components/CTA";
+//import CTA from "@/components/CTA";
 import Scheduling from "@/components/Scheduling";
 import Footer from "@/components/Footer";
 
@@ -24,9 +24,9 @@ const Index = () => {
         <div id="company">
           <GitHubProjects />
         </div>
-        <div id="cta">
+        {/* <div id="cta">
           <CTA />
-        </div>
+        </div> */}
         <div id="schedule">
           <Scheduling />
         </div>
