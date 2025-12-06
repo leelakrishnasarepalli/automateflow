@@ -6,6 +6,20 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "NocoBase workflow for AI-powered tools",
+    description: "NocoBase is the most extensible AI-powered no-code/low-code platform for building business applications and enterprise solutions.",
+    tags: ["NocoBase", "Automation", "AI-powered Tools"],
+    video: true,
+    videoUrl: "https://youtu.be/H60tV1tK3RU"
+  },
+  {
+    title: "Windmill workflow for AI-powered tools",
+    description: "Windmill stitches together file handling, Python logic, and AI models into a single visual workflow—making it fast to prototype, iterate, and ship AI-powered tools that can support educators, parents, and students.",
+    tags: ["Windmill", "Automation", "AI-powered Tools"],
+    video: true,
+    videoUrl: "https://youtu.be/cdTiCIUl44E"
+  },
+  {
     title: "Automated Q&A workflow using Pipedream",
     description: "This is a simple example of how teams can leverage automation + vector search + AI models to deliver fast and accurate answers from internal documents.",
     tags: ["Pipedream", "Automation", "Vector Search"],
