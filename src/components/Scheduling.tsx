@@ -1,14 +1,22 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, Video, CheckCircle, Mail } from "lucide-react";
 import { PopupButton } from "react-calendly";
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 const Scheduling = () => {
   const [isBooked, setIsBooked] = useState(false);
+  const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
   const { toast } = useToast();
 
-  const handleEventScheduled = (e: MessageEvent) => {
+  useEffect(() => {
+    const root = document.getElementById("root");
+    if (root) {
+      setRootElement(root);
+    }
+  }, []);
+
+  const handleEventScheduled = useCallback((e: MessageEvent) => {
     if (e.data.event && e.data.event === "calendly.event_scheduled") {
       setIsBooked(true);
       toast({
@@ -16,12 +24,17 @@ const Scheduling = () => {
         description: "Check your email for the calendar invite and meeting details.",
       });
     }
-  };
+  }, [toast]);
 
   // Listen for Calendly events
-  if (typeof window !== "undefined") {
-    window.addEventListener("message", handleEventScheduled);
-  }
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("message", handleEventScheduled);
+      return () => {
+        window.removeEventListener("message", handleEventScheduled);
+      };
+    }
+  }, [handleEventScheduled]);
 
   return (
     <section className="py-24 px-6 relative">
@@ -59,12 +72,14 @@ const Scheduling = () => {
                 </div>
               </div>
 
-              <PopupButton
-                url="https://calendly.com/leela-sarepalli/30min"
-                rootElement={document.getElementById("root")!}
-                text="Schedule Now"
-                className="inline-flex items-center justify-center gap-2 rounded-md text-lg font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 py-6"
-              />
+              {rootElement && (
+                <PopupButton
+                  url="https://calendly.com/leela-sarepalli/30min"
+                  rootElement={rootElement}
+                  text="Schedule Now"
+                  className="inline-flex items-center justify-center gap-2 rounded-md text-lg font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 py-6"
+                />
+              )}
 
               <div className="pt-4 border-t border-primary/20">
                 <p className="text-sm text-muted-foreground">
@@ -120,7 +135,7 @@ const Scheduling = () => {
         </div>
 
         {/* Additional Info Cards - Only show when not booked */}
-        {/* {!isBooked && ( 
+        {!isBooked && ( 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
           <div className="bg-background/50 backdrop-blur-sm rounded-xl p-6 border border-primary/10 text-center space-y-3">
             <div className="flex justify-center">
@@ -158,7 +173,7 @@ const Scheduling = () => {
             </p>
           </div>
         </div>
-        {/* )} */}
+         )} 
       </div>
     </section>
   );

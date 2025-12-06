@@ -22,7 +22,7 @@ const Footer = () => {
                     const element = document.getElementById('services');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   AI Agents
                 </button>
@@ -33,7 +33,7 @@ const Footer = () => {
                     const element = document.getElementById('services');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Agentic Workflows
                 </button>
@@ -44,7 +44,7 @@ const Footer = () => {
                     const element = document.getElementById('portfolio');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Demo Websites
                 </button>
@@ -55,7 +55,7 @@ const Footer = () => {
                     const element = document.getElementById('schedule');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Consulting
                 </button>
@@ -69,7 +69,7 @@ const Footer = () => {
               <li>
                 <button
                   onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   About Us
                 </button>
@@ -80,7 +80,7 @@ const Footer = () => {
                     const element = document.getElementById('portfolio');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Portfolio
                 </button>
@@ -91,7 +91,7 @@ const Footer = () => {
                     const element = document.getElementById('github-projects');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Projects
                 </button>
@@ -102,7 +102,7 @@ const Footer = () => {
                     const element = document.getElementById('schedule');
                     if (element) element.scrollIntoView({ behavior: 'smooth' });
                   }}
-                  className="hover:text-primary transition-colors text-left"
+                  className="hover:text-primary transition-colors text-left cursor-pointer"
                 >
                   Contact
                 </button>
@@ -142,8 +142,8 @@ const Footer = () => {
         <div className="border-t border-primary/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
           <p>© 2024-2025 AutomateFlow. All rights reserved.</p>
           <div className="flex gap-6">
-            <Link to="/privacy" className="hover:text-primary transition-colors">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-primary transition-colors">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-primary transition-colors cursor-pointer">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-primary transition-colors cursor-pointer">Terms of Service</Link>
           </div>
         </div>
       </div>
