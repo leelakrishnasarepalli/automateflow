@@ -4,6 +4,18 @@ import { Github, ExternalLink, Code } from "lucide-react";
 
 const githubProjects = [
   {
+    name: "Demo: Web Scraping + Local LLM with Ollama",
+    description: "A beginner-friendly walkthrough showing how to build a simple AI workflow using Python, web scraping, OpenAI, and a locally running LLM (Llama 3.2 via Ollama) — all inside a Jupyter Notebook in Cursor.",
+    url: "https://github.com/leelakrishnasarepalli/demo-ollama",
+    tags: ["Ollama", "Local LLM", "Web Scraping"]
+  },
+  {
+    name: "Student Connect Portal",
+    description: "Interactive learning platform for students in Grades 1-3, covering Math, English, and French with adaptive difficulty levels, AI-powered content generation, and comprehensive gamification.",
+    url: "https://github.com/leelakrishnasarepalli/studentconnectportal",
+    tags: ["AI", "Gamification", "Adaptive Difficulty", "Content Generation"]
+  },
+  {
     name: "AutomateFlow - AI-Powered Automation Portfolio",
     description: "Professional portfolio website showcasing AI-powered automation solutions, workflow automation projects, and rapid application development expertise.",
     url: "https://github.com/leelakrishnasarepalli/automateflow",

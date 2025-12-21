@@ -6,6 +6,27 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "Meeting Transcription System",
+    description: "A meeting transcription system that transcribes meetings and allows you to search the transcript for specific keywords.",
+    tags: ["Hugging Face", "Colab", "Gradio"],
+    video: true,
+    videoUrl: "https://youtu.be/Js7YXweIKFI"
+  },
+  {
+    title: "Python-based AI assistant",
+    description: "Python-based AI assistant that combines LLM reasoning, tool calling, image generation, and voice output into a single interactive experience using Gradio.",
+    tags: ["Python", "Gradio", " AI assistant"],
+    video: true,
+    videoUrl: "https://youtu.be/fyPFmS5VtiY"
+  },
+  {
+    title: "Local AI Model + Web Scraping",
+    description: "A short walkthrough demonstrating how beginners and early-stage practitioners can experiment with AI development at zero cost.",
+    tags: ["Web Scraping", "Jupyter Notebook", "Ollama"],
+    video: true,
+    videoUrl: "https://youtu.be/ATyB3PVBVf4"
+  },
+  {
     title: "NocoBase workflow for AI-powered tools",
     description: "NocoBase is the most extensible AI-powered no-code/low-code platform for building business applications and enterprise solutions.",
     tags: ["NocoBase", "Automation", "AI-powered Tools"],
