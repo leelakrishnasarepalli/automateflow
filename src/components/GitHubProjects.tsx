@@ -118,8 +118,9 @@ const GitHubProjects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
+                    aria-label={`Open ${project.name} repository in new tab`}
                   >
-                    <ExternalLink className="w-5 h-5" />
+                    <ExternalLink className="w-5 h-5 pointer-events-none" />
                   </a>
                 </div>
 

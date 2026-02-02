@@ -24,8 +24,9 @@ const VideoModal = ({ isOpen, onClose, videoUrl, title }: VideoModalProps) => {
           <button
             onClick={onClose}
             className="absolute -top-10 right-0 z-50 text-white hover:text-primary transition-colors"
+            aria-label="Close video modal"
           >
-            <X className="w-6 h-6" />
+            <X className="w-6 h-6 pointer-events-none" />
           </button>
           <div className="relative pt-[56.25%]"> {/* 16:9 aspect ratio */}
             <iframe

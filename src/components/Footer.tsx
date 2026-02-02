@@ -118,22 +118,25 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+                aria-label="Visit GitHub profile"
               >
-                <Github className="w-5 h-5 text-primary" />
+                <Github className="w-5 h-5 text-primary pointer-events-none" />
               </a>
               <a
                 href="https://www.linkedin.com/company/cloud-solutions-diy/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+                aria-label="Visit LinkedIn profile"
               >
-                <Linkedin className="w-5 h-5 text-primary" />
+                <Linkedin className="w-5 h-5 text-primary pointer-events-none" />
               </a>
               <a
                 href="mailto:leela.sarepalli@gmail.com"
                 className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+                aria-label="Send email"
               >
-                <Mail className="w-5 h-5 text-primary" />
+                <Mail className="w-5 h-5 text-primary pointer-events-none" />
               </a>
             </div>
           </div>
