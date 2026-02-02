@@ -148,7 +148,12 @@ const GitHubProjects = () => {
               <Button
                 variant="ghost"
                 className="w-full mt-4 group/btn justify-between hover:bg-primary/10"
-                onClick={() => window.open(project.url, "_blank")}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.open(project.url, "_blank");
+                }}
+                type="button"
               >
                 <span className="flex items-center gap-2">
                   <Github className="w-4 h-4" />
@@ -165,7 +170,12 @@ const GitHubProjects = () => {
             size="lg"
             variant="outline"
             className="gap-2 border-primary/20 hover:bg-primary/10"
-            onClick={() => window.open("https://github.com/leelakrishnasarepalli", "_blank")}
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open("https://github.com/leelakrishnasarepalli", "_blank");
+            }}
+            type="button"
           >
             <Github className="w-5 h-5" />
             View All on GitHub Profile

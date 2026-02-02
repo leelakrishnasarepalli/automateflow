@@ -242,16 +242,13 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Card key={index} className="overflow-hidden bg-card border-primary/10 hover:border-primary/20 transition-all duration-300 group hover:shadow-xl hover:shadow-primary/5">
               {/* Video Thumbnail */}
-              <div
-                className="aspect-video relative overflow-hidden cursor-pointer bg-gradient-to-br from-primary/10 to-accent/10"
-                onClick={() => setSelectedVideo({ url: project.videoUrl, title: project.title })}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    setSelectedVideo({ url: project.videoUrl, title: project.title });
-                  }
+              <button
+                type="button"
+                className="w-full aspect-video relative overflow-hidden cursor-pointer bg-gradient-to-br from-primary/10 to-accent/10 border-0 p-0 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setSelectedVideo({ url: project.videoUrl, title: project.title });
                 }}
                 aria-label={`Play video: ${project.title}`}
               >
@@ -259,8 +256,8 @@ const Portfolio = () => {
                 {getYouTubeThumbnail(project.videoUrl) && (
                   <img
                     src={getYouTubeThumbnail(project.videoUrl)!}
-                    alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    alt=""
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
                     draggable={false}
                     onError={(e) => {
                       // Multi-level fallback for thumbnails
@@ -290,19 +287,19 @@ const Portfolio = () => {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
 
                 {/* Play button */}
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
                   <div className="w-16 h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg pointer-events-none">
                     <Play className="w-8 h-8 text-primary-foreground ml-1 pointer-events-none" />
                   </div>
                 </div>
 
                 {/* Video Demo badge */}
-                <div className="absolute top-3 right-3 pointer-events-none">
+                <div className="absolute top-3 right-3 pointer-events-none z-10">
                   <span className="px-3 py-1 rounded-full bg-background/90 backdrop-blur-sm text-xs font-medium border border-primary/20">
                     Video Demo
                   </span>
                 </div>
-              </div>
+              </button>
 
               <div className="p-5 space-y-3">
                 <h3 className="text-lg font-bold leading-tight">{project.title}</h3>
@@ -326,9 +323,12 @@ const Portfolio = () => {
           <Button
             variant="outline"
             className="gap-2 border-primary/20 hover:bg-primary/10"
-            onClick={() => {
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
               window.open('https://github.com/leelakrishnasarepalli?tab=repositories', '_blank');
             }}
+            type="button"
           >
             <Github className="w-5 h-5" />
             View All Projects on GitHub
