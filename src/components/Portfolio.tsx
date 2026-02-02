@@ -6,25 +6,53 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
-    title: "Meeting Transcription System",
-    description: "A meeting transcription system that transcribes meetings and allows you to search the transcript for specific keywords.",
-    tags: ["Hugging Face", "Colab", "Gradio"],
+    title: "Node-RED + AI integration",
+    description: "The ability to connect system commands, APIs, devices, and AI—visually and instantly—makes Node-red perfect for building real-world automations.",
+    tags: ["Node-RED", "AI Integration", "Automation"],
     video: true,
-    videoUrl: "https://youtu.be/Js7YXweIKFI"
+    videoUrl: "https://youtu.be/KTyH3QkchX0"
   },
   {
-    title: "Python-based AI assistant",
-    description: "Python-based AI assistant that combines LLM reasoning, tool calling, image generation, and voice output into a single interactive experience using Gradio.",
-    tags: ["Python", "Gradio", " AI assistant"],
+    title: "StackAI to deploy a Chatbot",
+    description: "StackAI to deploy a Chatbot that can answer questions about the company and its products.",
+    tags: ["StackAI", "Chatbot", "Deployment"],
     video: true,
-    videoUrl: "https://youtu.be/fyPFmS5VtiY"
+    videoUrl: "https://youtu.be/_GDHSa6qdlA"
   },
   {
-    title: "Local AI Model + Web Scraping",
-    description: "A short walkthrough demonstrating how beginners and early-stage practitioners can experiment with AI development at zero cost.",
-    tags: ["Web Scraping", "Jupyter Notebook", "Ollama"],
+    title: "Zapier workflow connects Calendly",
+    description: "Zapier workflow connects Calendly (from my website) and Todoist — handling bookings, filtering requests, setting reminders, and prioritizing leads automatically.",
+    tags: ["Zapier", "Calendly", "Todoist"],
     video: true,
-    videoUrl: "https://youtu.be/ATyB3PVBVf4"
+    videoUrl: "https://youtu.be/UKdYIFz11Co"
+  },
+  {
+    title: "Built an agentic workflow using Make.com",
+    description: "an agentic workflow using Make.com that listens to Hacker News RSS feeds for the newest AI, automation, and LLM topics — then automatically summarizes and posts them on my LinkedIn company page",
+    tags: ["Make.com", "RSS", "LinkedIn"],
+    video: true,
+    videoUrl: "https://youtu.be/omJMx1zjwlE"
+  },
+  {
+    title: "E-commerce Automation Workflow",
+    description: "n8n workflow automating inventory, pricing updates, and customer notifications.",
+    tags: ["n8n", "E-commerce", "Automation"],
+    video: true,
+    videoUrl: "https://youtube.com/watch?v=T4TNO7wmb78"
+  },
+  {
+    title: "AI Document Processing System",
+    description: "Automated document analysis and data extraction using AI for non-profit grant applications.",
+    tags: ["AI", "Document Processing", "LandingAI"],
+    video: true,
+    videoUrl: "https://youtube.com/watch?v=MFBtzeuIu_w"
+  },
+  {
+    title: "Conversational AI Assistant",
+    description: "Custom chatbot for healthcare organization handling patient inquiries 24/7.",
+    tags: ["Chatbot", "VapiAI", "Healthcare"],
+    video: true,
+    videoUrl: "https://youtube.com/watch?v=YGFz8sqr0iU"
   },
   {
     title: "NocoBase workflow for AI-powered tools",
@@ -55,13 +83,6 @@ const projects = [
     videoUrl: "https://youtu.be/pqXOT7tNAtM"
   },
   {
-    title: "Node-RED + AI integration",
-    description: "The ability to connect system commands, APIs, devices, and AI—visually and instantly—makes Node-red perfect for building real-world automations.",
-    tags: ["Node-RED", "AI Integration", "Automation"],
-    video: true,
-    videoUrl: "https://youtu.be/KTyH3QkchX0"
-  },
-  {
     title: "AI Agentic Workflow using Langflow, a Low-code AI builder",
     description: "In this setup, I first ingested and stored the document in a Vector Database, then built a workflow that allows users to query the PDF instantly and get accurate, context-aware answers",
     tags: ["Langflow", "Vector Database", "PDF Processing"],
@@ -76,20 +97,6 @@ const projects = [
     videoUrl: "https://youtu.be/Cbx032TTehY"
   },
   {
-    title: "StackAI to deploy a Chatbot",
-    description: "StackAI to deploy a Chatbot that can answer questions about the company and its products.",
-    tags: ["StackAI", "Chatbot", "Deployment"],
-    video: true,
-    videoUrl: "https://youtu.be/_GDHSa6qdlA"
-  },
-  {
-    title: "Zapier workflow connects Calendly",
-    description: "Zapier workflow connects Calendly (from my website) and Todoist — handling bookings, filtering requests, setting reminders, and prioritizing leads automatically.",
-    tags: ["Zapier", "Calendly", "Todoist"],
-    video: true,
-    videoUrl: "https://youtu.be/UKdYIFz11Co"
-  },
-  {
     title: "Relevance AI agent features",
     description: "an agent that fetches the latest job postings from a company's LinkedIn page — just say @RelevanceAI fetch me jobs from Scotiabank",
     tags: ["Relevance AI", "AI Agent", "LinkedIn"],
@@ -97,25 +104,39 @@ const projects = [
     videoUrl: "https://youtu.be/LSo1nB4drpU"
   },
   {
-    title: "Built an agentic workflow using Make.com",
-    description: "an agentic workflow using Make.com that listens to Hacker News RSS feeds for the newest AI, automation, and LLM topics — then automatically summarizes and posts them on my LinkedIn company page",
-    tags: ["Make.com", "RSS", "LinkedIn"],
+    title: "Playwright Test Agents",
+    description: "integrate AI capabilities into end-to-end testing workflows",
+    tags: ["Playwright", "Integration", "Workflow"],
     video: true,
-    videoUrl: "https://youtu.be/omJMx1zjwlE"
+    videoUrl: "https://youtube.com/watch?v=jn1ejBhzcik"
   },
   {
-    title: "AI Document Processing System",
-    description: "Automated document analysis and data extraction using AI for non-profit grant applications.",
-    tags: ["AI", "Document Processing", "LandingAI"],
+    title: "Open-source AI Browser",
+    description: "Open-source, AI-native browser that blends web navigation, automation, and local AI models",
+    tags: ["AI Browser", "Open Source", "Agent Mode"],
     video: true,
-    videoUrl: "https://youtube.com/watch?v=MFBtzeuIu_w"
+    videoUrl: "https://youtube.com/watch?v=1j4j1MSXEjw"
   },
   {
-    title: "Conversational AI Assistant",
-    description: "Custom chatbot for healthcare organization handling patient inquiries 24/7.",
-    tags: ["Chatbot", "VapiAI", "Healthcare"],
+    title: "Meeting Transcription System",
+    description: "A meeting transcription system that transcribes meetings and allows you to search the transcript for specific keywords.",
+    tags: ["Hugging Face", "Colab", "Gradio"],
     video: true,
-    videoUrl: "https://youtube.com/watch?v=YGFz8sqr0iU"
+    videoUrl: "https://youtu.be/Js7YXweIKFI"
+  },
+  {
+    title: "Python-based AI assistant",
+    description: "Python-based AI assistant that combines LLM reasoning, tool calling, image generation, and voice output into a single interactive experience using Gradio.",
+    tags: ["Python", "Gradio", " AI assistant"],
+    video: true,
+    videoUrl: "https://youtu.be/fyPFmS5VtiY"
+  },
+  {
+    title: "Local AI Model + Web Scraping",
+    description: "A short walkthrough demonstrating how beginners and early-stage practitioners can experiment with AI development at zero cost.",
+    tags: ["Web Scraping", "Jupyter Notebook", "Ollama"],
+    video: true,
+    videoUrl: "https://youtu.be/ATyB3PVBVf4"
   },
   {
     title: "Power Automate CRM Integration",
@@ -123,13 +144,6 @@ const projects = [
     tags: ["Power Automate", "CRM", "Integration"],
     video: true,
     videoUrl: "https://youtube.com/watch?v=EOS2xnGi_Ro"
-  },
-  {
-    title: "E-commerce Automation Workflow",
-    description: "n8n workflow automating inventory, pricing updates, and customer notifications.",
-    tags: ["n8n", "E-commerce", "Automation"],
-    video: true,
-    videoUrl: "https://youtube.com/watch?v=T4TNO7wmb78"
   },
   {
     title: "MVP Web App",
@@ -153,18 +167,46 @@ const projects = [
     videoUrl: "https://youtube.com/watch?v=A_5jYr8vii0"
   },
   {
-    title: "Playwright Test Agents",
-    description: "integrate AI capabilities into end-to-end testing workflows",
-    tags: ["Playwright", "Integration", "Workflow"],
+    title: "Computer Vision Solutions on Azure",
+    description: "Azure AI Vision provides a practical and well-structured set of services to analyze images and videos, extract meaningful insights, and build intelligent visual applications.",
+    tags: ["Azure AI Vision", "Face Detection", "Optical Character Recognition"],
     video: true,
-    videoUrl: "https://youtube.com/watch?v=jn1ejBhzcik"
+    videoUrl: "https://youtu.be/96nmYmyZVzk"
   },
   {
-    title: "Open-source AI Browser",
-    description: "Open-source, AI-native browser that blends web navigation, automation, and local AI models",
-    tags: ["AI Browser", "Open Source", "Agent Mode"],
+    title: "AI Information Extraction Solutions in Azure",
+    description: "Azure AI brings together content understanding, document intelligence, and knowledge mining to extract structured insights from unstructured data, enabling organizations to process, enrich, and operationalize content at scale.",
+    tags: ["Azure AI", "Content Understanding", "Document Intelligence"],
     video: true,
-    videoUrl: "https://youtube.com/watch?v=1j4j1MSXEjw"
+    videoUrl: "https://youtu.be/-HoIjqCOIIk"
+  },
+  {
+    title: "AI Agents with Microsoft Foundry and Azure AI",
+    description: "AI agent development on Azure, focusing on how workflows, protocols, and SDKs come together to enable interoperable, multi-agent systems.",
+    tags: ["Microsoft Foundry", "Azure AI", "AI Agents"],
+    video: true,
+    videoUrl: "https://youtu.be/5ap7RY8VPIE"
+  },
+  {
+    title: "Language Intelligence with Azure AI Language",
+    description: "This video focuses on foundational language understanding capabilities using Azure AI Language, covering core patterns for analyzing text and extracting meaning from user input.",
+    tags: ["Azure AI Language", "Language Understanding", "Text Analysis"],
+    video: true,
+    videoUrl: "https://youtu.be/Hvnbix6FyCs"
+  },
+  {
+    title: "AI Agents on Azure",
+    description: "This video demonstrates a structured approach to building AI agents on Azure using Microsoft Foundry, with a focus on agent design patterns, tool integration, and multi-agent coordination.",
+    tags: ["Microsoft Foundry", "Azure AI", "AI Agents"],
+    video: true,
+    videoUrl: "https://youtu.be/CVRVmN50dH0"
+  },
+  {
+    title: "Generative AI Applications on Azure",
+    description: "This video explores the capabilities of Azure AI, focusing on generative AI applications and how they can be used to build intelligent systems.",
+    tags: ["Azure AI", "Generative AI", "Applications"],
+    video: true,
+    videoUrl: "https://youtu.be/BPi9Lu0gjk4"
   }
 ];
 
@@ -203,13 +245,23 @@ const Portfolio = () => {
               <div
                 className="aspect-video relative overflow-hidden cursor-pointer bg-gradient-to-br from-primary/10 to-accent/10"
                 onClick={() => setSelectedVideo({ url: project.videoUrl, title: project.title })}
+                role="button"
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    setSelectedVideo({ url: project.videoUrl, title: project.title });
+                  }
+                }}
+                aria-label={`Play video: ${project.title}`}
               >
                 {/* YouTube Thumbnail */}
                 {getYouTubeThumbnail(project.videoUrl) && (
                   <img
                     src={getYouTubeThumbnail(project.videoUrl)!}
                     alt={project.title}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                    draggable={false}
                     onError={(e) => {
                       // Multi-level fallback for thumbnails
                       const currentSrc = e.currentTarget.src;
@@ -235,29 +287,29 @@ const Portfolio = () => {
                 )}
 
                 {/* Dark overlay on hover */}
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
 
                 {/* Play button */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg">
-                    <Play className="w-8 h-8 text-primary-foreground ml-1" />
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="w-16 h-16 rounded-full bg-primary/90 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg pointer-events-none">
+                    <Play className="w-8 h-8 text-primary-foreground ml-1 pointer-events-none" />
                   </div>
                 </div>
 
                 {/* Video Demo badge */}
-                <div className="absolute top-3 right-3">
+                <div className="absolute top-3 right-3 pointer-events-none">
                   <span className="px-3 py-1 rounded-full bg-background/90 backdrop-blur-sm text-xs font-medium border border-primary/20">
                     Video Demo
                   </span>
                 </div>
               </div>
-              
+
               <div className="p-5 space-y-3">
                 <h3 className="text-lg font-bold leading-tight">{project.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {project.description}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="px-2.5 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium border border-primary/20">
@@ -269,7 +321,7 @@ const Portfolio = () => {
             </Card>
           ))}
         </div>
-        
+
         <div className="text-center">
           <Button
             variant="outline"
