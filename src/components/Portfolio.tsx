@@ -6,6 +6,41 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "Voice Pluto local voice assistant for macOS",
+    description: "A CLI-powered local voice assistant that uses a custom openWakeWord model, local transcription, AI research summaries, Apple Notes digests, whitelisted Chrome links, and spoken briefings.",
+    tags: ["Voice Assistant", "macOS", "Local AI"],
+    video: true,
+    videoUrl: "https://youtu.be/zM6rOqM2cQg"
+  },
+  {
+    title: "Context-aware Gmail drafting Chrome extension",
+    description: "A Chrome extension that generates structured email drafts inside the reply box using thread context, rough notes, insert/replace/append controls, local generation, and optional cloud fallback.",
+    tags: ["Chrome Extension", "Email", "Local AI"],
+    video: true,
+    videoUrl: "https://youtu.be/FogDwwy2Usg"
+  },
+  {
+    title: "Pluto CLI-first personal productivity assistant",
+    description: "A local-first terminal assistant for preflight checks, system diagnostics, chat-first commands, calendar and Zoom workflows, browser aliases, screenshots, Notes automation, retros, and persistent preferences.",
+    tags: ["CLI", "Productivity", "Agentic Workflows"],
+    video: true,
+    videoUrl: "https://youtu.be/kiHaWj214pk"
+  },
+  {
+    title: "Website assistant Chrome extension",
+    description: "A browser overlay that turns any website into a context-aware assistant, answering from page structure, available actions, and live web data with local AI plus cloud fallback.",
+    tags: ["Chrome Extension", "Browser AI", "Web Assistant"],
+    video: true,
+    videoUrl: "https://youtu.be/ZG4TR8SZWNk"
+  },
+  {
+    title: "OpenClaw personal productivity assistant",
+    description: "A walkthrough of building an agent-driven productivity assistant with OpenClaw, WhatsApp interaction, Google Workspace skills, and Ollama as the reasoning engine.",
+    tags: ["OpenClaw", "Personal AI", "Ollama"],
+    video: true,
+    videoUrl: "https://youtu.be/oDNZzqTXja0"
+  },
+  {
     title: "Node-RED + AI integration",
     description: "The ability to connect system commands, APIs, devices, and AI—visually and instantly—makes Node-red perfect for building real-world automations.",
     tags: ["Node-RED", "AI Integration", "Automation"],
