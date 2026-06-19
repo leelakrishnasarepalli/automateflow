@@ -4,6 +4,42 @@ import { Github, ExternalLink, Code } from "lucide-react";
 
 const githubProjects = [
   {
+    name: "Voiceover Agent",
+    description: "AI voice director for product demos — a local-first Next.js app that optimizes scripts for narration, generates ElevenLabs TTS audio, stores projects in SQLite, and downloads MP3 voiceovers.",
+    url: "https://github.com/leelakrishnasarepalli/personal-voiceover-agent",
+    tags: ["Next.js", "ElevenLabs", "Voice AI", "SQLite"]
+  },
+  {
+    name: "Ticket Dashboard Desktop (My Planner)",
+    description: "Cross-platform Electron app that logs into a configured helpdesk page, extracts visible tickets, and renders a local Kanban dashboard with To Do, Doing, and Done columns.",
+    url: "https://github.com/leelakrishnasarepalli/my-planner",
+    tags: ["Electron", "TypeScript", "Kanban", "Automation"]
+  },
+  {
+    name: "Voice Pluto (macOS Local Voice Assistant)",
+    description: "Local-first macOS voice assistant using openWakeWord, faster-whisper STT, macOS TTS, and OpenAI intent parsing — with EventKit, Apple Notes, whitelist-only Chrome, timers, and launch-at-login daemon mode.",
+    url: "https://github.com/leelakrishnasarepalli/voice-pluto",
+    tags: ["Voice Assistant", "macOS", "Local AI", "Python"]
+  },
+  {
+    name: "Pluto Text - Gmail Draft Chrome Extension",
+    description: "Chrome Manifest V3 extension for manual long-form draft generation in browser text fields — with Gmail thread context, rewrite controls, insert/replace/append actions, and a local Ollama/OpenAI API backend.",
+    url: "https://github.com/leelakrishnasarepalli/pluto-text",
+    tags: ["Chrome Extension", "TypeScript", "Ollama", "Gmail"]
+  },
+  {
+    name: "Pluto CLI",
+    description: "Typer-based CLI personal productivity assistant with system diagnostics, Wi-Fi and device inspection, calendar/reminder/notes automation, YAML workflows, natural-language ask mode, and markdown memory stores.",
+    url: "https://github.com/leelakrishnasarepalli/pluto",
+    tags: ["CLI", "Python", "Typer", "OpenAI"]
+  },
+  {
+    name: "WebChat Overlay (demo-codex)",
+    description: "Chrome extension and local Python API that adds a floating page-aware assistant to any webpage — answering from page context with Ollama-first routing and optional OpenAI web-search fallback.",
+    url: "https://github.com/leelakrishnasarepalli/demo-codex",
+    tags: ["Chrome Extension", "Ollama", "Python", "Web Assistant"]
+  },
+  {
     name: "Demo: Web Scraping + Local LLM with Ollama",
     description: "A beginner-friendly walkthrough showing how to build a simple AI workflow using Python, web scraping, OpenAI, and a locally running LLM (Llama 3.2 via Ollama) — all inside a Jupyter Notebook in Cursor.",
     url: "https://github.com/leelakrishnasarepalli/demo-ollama",

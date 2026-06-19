@@ -6,6 +6,13 @@ import VideoModal from "./VideoModal";
 
 const projects = [
   {
+    title: "Voice-agent demo using ElevenLabs",
+    description: "Built a voice-agent demo using ElevenLabs to showcase AI automation demos through conversation. The demo combines Voice chat, Knowledge base responses, Tool calling and Test scenarios and deployment.",
+    tags: ["Voice Assistant", "ElevenLabs", "Conversation with AI"],
+    video: true,
+    videoUrl: "https://youtu.be/N2ymYrBpves"
+  },
+  {
     title: "Voice Pluto local voice assistant for macOS",
     description: "A CLI-powered local voice assistant that uses a custom openWakeWord model, local transcription, AI research summaries, Apple Notes digests, whitelisted Chrome links, and spoken briefings.",
     tags: ["Voice Assistant", "macOS", "Local AI"],
